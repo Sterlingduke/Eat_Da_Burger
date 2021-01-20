@@ -4,7 +4,8 @@ $(function() {
         event.preventDefault();
   
       var newBurger = {
-        name: $("#burgerEntry").val().trim()
+        name: $("#burgerEntry").val().trim(),
+        devoured: 0
       };
       console.log(newBurger);
   
@@ -14,7 +15,7 @@ $(function() {
         data: newBurger
       }).then(
         function() {
-          console.log("New Burger Added");
+          console.log(`New Burger Added`);
           // Reload the page to get the updated list
           location.reload();
         }
@@ -23,15 +24,16 @@ $(function() {
   
     $(".eat-burger").on("click", function(event) {
       var id = $(this).data("id");
-      var confirmEat = $(this).data("newEaten") ===false;
+      var confirmEat = $(this).data("neweaten") === false;
 
       
   
       var confirmEatState = {
-        devour: confirmEat
+        devour: 1
       };
+      
       console.log(`id: ${id} 
-      Eaten: ${confirmEatState.devour}`);
+      eaten: ${confirmEatState.devour}`);
 
       $.ajax(`/api/burgers/${id}`, {
         type: "PUT",

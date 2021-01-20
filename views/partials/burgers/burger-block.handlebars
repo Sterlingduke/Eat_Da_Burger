@@ -1,9 +1,20 @@
-<li>
-	{{name}}
+<li class="list-group-item">
+    {{burger_name}}
+        
+        {{#if devoured}}
+        {{else}}
+        <button type= "button" class="eat-burger btn btn-primary btn-sm" data-id="{{this.id}}" data-neweaten="{{devoured}}">Eat Up!</button>
+        {{/if}}
+</li> 
 
-	<button class="change-sleep" data-id="{{id}}" data-newsleep="{{sleep}}">
-		{{#if sleep}}SLEEP TIME!{{else}}WAKE UP!{{/if}}
+{{!-- <li class="list-group-item">
+	{{burger_name}}
+
+	<button class="eat-burger" data-id="{{this.id}}" data-neweaten="{{devour}}">
+		{{#if devour}}Devour!{{/if}}
 	</button>
+	
+	
 
-	<button class="delete-cat" data-id="{{this.id}}">DELETE!</button>
-</li>
+	<button class="eat-burger" data-id="{{this.id}}">EAT IT</button>
+</li> --}}

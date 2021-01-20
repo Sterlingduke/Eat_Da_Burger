@@ -1,38 +1,54 @@
-<h1>Cats!</h1>
+<div class="container">
+    <div class="jumbotron text-center m-3">
+        <h1 class="display-4">Randy's Burger Shak!</h1>
+        <hr class="my-4">
+        <div class="row d-flex justify-content-around">
+            <div class="col-lg">
+            <div class="card">
+                <div class="card-header">
+                    The Uneaten Burgers...Let's Start!
+                </div>
+                <ul class="list-group list-group-flush m-3">
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    {{> burgers/burger-block devoured=false}}
+                    {{/unless}}
+                    {{/each}}
+                </ul>
+            </div>
+            </div>
+            <div class="col-lg">
+            <div class="card">
+                <div class="card-header">
+                    Damn Good Burger....All Gone!
+                </div>
+                <ul class="list-group list-group-flush m-3">
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    {{> burgers/burger-block devoured=true}}
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center m-3">
+            <div class="col-lg">
+            <div class="card">
+                <div class="card-header">
+                    What Kind of Burger..Type Here!
+                </div>
+                <div class="card-body">
+                    <form class="create-form">
+                        <div class="form-group">
+                            <textarea class="form-control text-center" id="burgerEntry" row="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">ADD!</button>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div> 
 
-<h2>Cats that are not sleepy!</h2>
-
-<ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Cats that are sleepy!</h2>
-
-<ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Cat</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Cat Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-
-  <div class="form-group">
-    <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div>
-
-  <button type="submit">Add Cat</button>
-</form>
