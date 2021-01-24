@@ -16,12 +16,21 @@ So That I can keep track of burgers that i have ate
 
 ## Tech Used
 
-*HTML
-*CSS
-*Bootstap
-*VS code
-*MYSQL
-*Handlebars
-*JawsDB
-*Heroku
-*Node.js
+- HTML
+- CSS
+- Bootstap
+- VS code
+- MYSQL
+- Handlebars
+- JawsDB
+- Heroku
+- Node.js
+
+### Contributing
+UT Fullstack Bootcamp with the help of instructor Calvin Carter and TA's and myself.
+
+### portfolio
+
+https://sterlingduke.github.io/
+
+
