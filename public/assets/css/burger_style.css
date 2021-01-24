@@ -12,19 +12,20 @@ body {
 
 }
 
-button {
+.btn {
     border-radius: 16px;
     padding: 5px;
     color: black;
-    background-color:burlywood;
+    background-color:rgb(247, 183, 247);
+    border-color: rgb(182, 43, 152);
   }
 
-.card{
+ .card{
     background-color: blueviolet;
     color: black;
     float:right;
     
-}
+} 
 
 .card2{
     background-color: blueviolet;
@@ -41,6 +42,9 @@ button {
 
 
  
-
+.display-4{
+    color:rgb(207, 39, 151);
+    font-family:cursive;
+}
 
  
