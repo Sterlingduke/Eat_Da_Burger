@@ -14,6 +14,46 @@ This is a simple restaurant app that allows the user to ass burgers to a list th
 # Screen Shot
 ![image](https://user-images.githubusercontent.com/70359225/105620224-2f15e480-5dc0-11eb-95a0-6811cd9d25a1.png)
 
+#### Directory structure
+
+All the recommended files and directories from the steps above should look like the following structure:
+
+```
+.
+├── config
+│   ├── connection.js
+│   └── orm.js
+│ 
+├── controllers
+│   └── burgers_controller.js
+│
+├── db
+│   ├── schema.sql
+│   └── seeds.sql
+│
+├── models
+│   └── burger.js
+│ 
+├── node_modules
+│ 
+├── package.json
+│
+├── public
+│   └── assets
+│       ├── css
+│       │   └── burger_style.css
+│       └── img
+│           └── burger.png
+│   
+│
+├── server.js
+│
+└── views
+    ├── index.handlebars
+    └── layouts
+        └── main.handlebars
+```
+
 ## Tech Used
 
 - HTML
