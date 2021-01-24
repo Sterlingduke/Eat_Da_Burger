@@ -14,4 +14,14 @@ So That I can keep track of burgers that i have ate
 # Screen Shot
 ![image](https://user-images.githubusercontent.com/70359225/105620224-2f15e480-5dc0-11eb-95a0-6811cd9d25a1.png)
 
+## Tech Used
 
+*HTML
+*CSS
+*Bootstap
+*VS code
+*MYSQL
+*Handlebars
+*JawsDB
+*Heroku
+*Node.js
