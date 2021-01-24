@@ -9,6 +9,7 @@ h1 {
 
 body {
     background-color: beige;
+
 }
 
 button {
@@ -17,6 +18,27 @@ button {
     color: black;
     background-color:burlywood;
   }
+
+.card{
+    background-color: blueviolet;
+    color: black;
+    float:right;
+    
+}
+
+.card2{
+    background-color: blueviolet;
+    color: black;
+    float:left;
+}
+
+.card3{
+    background-color: beige;
+    color: black;
+    float:left;
+    
+}
+
 
  
 

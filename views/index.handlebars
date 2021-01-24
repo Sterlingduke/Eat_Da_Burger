@@ -3,11 +3,13 @@
         <h1 class="display-4">Randy's Burger Shak!</h1>
         <hr class="my-4">
         <div class="row d-flex justify-content-around">
+
             <div class="col-lg">
-            <div class="card">
+            <div class="card2">
                 <div class="card-header">
                     The Uneaten Burgers...Let's Start!
                 </div>
+            
                 <ul class="list-group list-group-flush m-3">
                     {{#each burgers}}
                     {{#unless devoured}}
@@ -15,6 +17,7 @@
                     {{/unless}}
                     {{/each}}
                 </ul>
+                
             </div>
             </div>
             <div class="col-lg">
@@ -32,9 +35,12 @@
             </div>
             </div>
         </div>
+        
+    
+        
         <div class="row d-flex justify-content-center m-3">
             <div class="col-lg">
-            <div class="card">
+            <div class="card3">
                 <div class="card-header">
                     What Kind of Burger..Type Here!
                 </div>
